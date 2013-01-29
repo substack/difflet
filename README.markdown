@@ -69,6 +69,8 @@ deletions.
 If `opts.indent` is set, output will span multiple lines and `opts.indent`
 spaces will be used for leading whitespace.
 
+If `opts.json` is set to true, the output will be ina JSON format.
+
 If `opts.comma === 'first'` then commas will be placed at the start of lines.
 
 Setting `opts.comment` to `true` will turn on comments with the previous
