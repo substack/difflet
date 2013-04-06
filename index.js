@@ -84,9 +84,15 @@ function difflet (opts, prev, next) {
         }
         var inserted = insertable && prevNode === undefined;
         
-        var indentx = indent ? Array(
-            ((this.path || []).length + 1) * indent + 1
-        ).join(' ') : '';
+        var indentx;
+        try {
+            indentx = indent ? Array(
+                ((this.path || []).length + 1) * indent + 1
+            ).join(' ') : '';
+        } catch (e) {
+            // at times we get an invalid Array size here and need to prevent crashing
+            indentx = '';
+        }
         if (commaFirst) indentx = indentx.slice(indent);
         
         if (Array.isArray(node)) {
