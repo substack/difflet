@@ -1,7 +1,7 @@
 var traverse = require('traverse');
 var Stream = require('stream').Stream;
 var charm = require('charm');
-var deepEqual = require('deep-equal');
+var deepEqual = require('deep-is');
 
 var exports = module.exports = function (opts_) {
     var fn = difflet.bind(null, opts_);
