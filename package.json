@@ -22,7 +22,7 @@
     },
     "dependencies" : {
         "traverse" : "0.6.x",
-        "charm" : "0.0.x",
+        "charm" : "0.1.x",
         "deep-is" : "0.1.x"
     },
     "devDependencies" : {
