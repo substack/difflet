@@ -113,4 +113,6 @@ npm test
 license
 =======
 
-MIT/X11
+Copyright (C) 2012, 2013 James Halliday <mail@substack.net>
+
+Licensed under the MIT license, see LICENSE for details.
