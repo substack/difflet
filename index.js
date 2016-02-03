@@ -167,7 +167,7 @@ function difflet (opts, prev, next) {
                     }
                 }
                 else {
-                    if(prevNode && prevNode.length > child.parent.node.length) {
+                    if(Array.isArray(prevNode) && prevNode.length > child.parent.node.length) {
                         var missingItems = prevNode.slice(child.key + 1);
 
                         set('deleted');
