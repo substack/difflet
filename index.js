@@ -18,6 +18,9 @@ var exports = module.exports = function (opts_) {
         s.writable = true;
         
         difflet(opts, prev, next);
+        if (opts && opts.json) {
+            data = JSON.parse(data);
+        }
         return data;
     };
     return fn;
